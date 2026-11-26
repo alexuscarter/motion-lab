@@ -3,6 +3,7 @@ body {
   background: var(--color-paper);
   font-size: var(--text-body);
   line-height: var(--leading-body);
+  color: var(--color-ink);
 }
 
 a {

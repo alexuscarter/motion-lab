@@ -1,8 +1,8 @@
 01 · Roll Link
 
-A link who flips to reveal another link copy in a different style
+A link that flips to reveal another link copy in a different style
 
-## how it actualy works
+## how it actually works
 
 The mask: sets "window" for the visual, clips its overflowing content with overflow:hidden;
 
