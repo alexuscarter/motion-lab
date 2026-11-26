@@ -1,0 +1,55 @@
+:root {
+  --color-paper: #f4f3ef;
+  --color-surface: #ffffff;
+  --color-stage: #ebe9e3;
+  --color-ink: #0f0f0f;
+  --color-muted: #75746f;
+  --color-line: #e2e0da;
+  --color-accent: #d8ff3e;
+
+  --font-serif: "Instrument Serif", serif;
+  --font-sans: "Geist", sans-serif;
+  --font-mono: "Geist Mono", monospace;
+
+  --weight-regular: 400;
+  --weight-medium: 500;
+
+  --text-display: 4.5rem;
+  --leading-display: 4.5rem;
+  --tracking-display: -0.02em;
+
+  --text-heading: 2rem;
+  --leading-heading: 2.25rem;
+  --tracking-heading: -0.02em;
+
+  --text-ui: 1rem;
+  --leading-ui: 1.25rem;
+  --text-body: 1rem;
+  --leading-body: 1.5rem;
+
+  --text-label: 0.75rem;
+  --leading-label: 1rem;
+  --tracking-label: 0.06em;
+  --transform-label: uppercase;
+
+  --space-4: 0.25rem;
+  --space-8: 0.5rem;
+  --space-12: 0.75rem;
+  --space-16: 1rem;
+  --space-24: 1.5rem;
+  --space-32: 2rem;
+  --space-48: 3rem;
+  --space-64: 4rem;
+
+  --radius-small: 0.5rem;
+  --radius-medium: 0.875rem;
+  --radius-large: 1.25rem;
+  --radius-pill: 999px;
+
+  --duration-fast: 200ms;
+  --duration-base: 400ms;
+  --duration-slow: 700ms;
+
+  --ease-inout: cubic-bezier(0.65, 0, 0.35, 1);
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+}
