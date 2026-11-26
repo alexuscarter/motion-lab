@@ -50,6 +50,7 @@ a {
   color: var(--color-ink);
   position: relative;
   z-index: 1;
+  transition: background-color var(--duration-base) var(--ease-inout);
 }
 
 .button-cta-circle {
@@ -59,7 +60,7 @@ a {
   border-radius: 50%;
   position: absolute;
   z-index: 0;
-  top: 17px;
+  top: 22px;
   right: 10px;
   transform: scale(0);
   transition: transform var(--duration-base) var(--ease-inout);
@@ -69,9 +70,6 @@ a {
   height: 32px;
   width: 32px;
   transition: transform var(--duration-base) var(--ease-inout);
-}
-
-.button-cta-arrow {
   display: inline-block;
 }
 
