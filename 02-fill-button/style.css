@@ -60,7 +60,7 @@ a {
   border-radius: 50%;
   position: absolute;
   z-index: 0;
-  top: 22px;
+  top: 10px;
   right: 10px;
   transform: scale(0);
   transition: transform var(--duration-base) var(--ease-inout);
@@ -93,4 +93,32 @@ a {
 .button-cta:focus-visible {
   outline: 2px solid var(--color-ink);
   outline-offset: 3px;
+}
+
+@media (max-width: 600px) {
+  .button-cta {
+    height: 64px;
+    padding: 8px 8px 8px 28px;
+    gap: var(--space-16);
+  }
+  .button-cta-text {
+    font-size: 20px;
+  }
+  .button-cta-icon,
+  .button-cta-circle {
+    width: 48px;
+    height: 48px;
+  }
+  .button-cta-circle {
+    top: 8px; /* (64 − 48) ÷ 2 */
+    right: 8px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .button-cta-circle,
+  .button-cta-arrow,
+  .button-cta-text,
+  .button-cta-icon {
+    transition: none;
+  }
 }

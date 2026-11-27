@@ -16,7 +16,7 @@ body {
   width: fit-content;
 }
 
-.link::after {
+.link-text::after {
   content: "";
   display: block;
   background-color: var(--color-ink);
@@ -28,7 +28,7 @@ body {
   transition: transform 300ms var(--ease-out);
 }
 
-.link a {
+.link-text {
   font-family: var(--font-serif);
   font-size: 56px;
   line-height: 1.1;
@@ -36,23 +36,23 @@ body {
   color: inherit;
 }
 
-li:hover::after {
+.link-text:hover::after {
   transform: scaleX(1);
   transform-origin: left;
 }
 
-@media (min-width: 375px) {
-  .link a {
+@media (max-width: 600px) {
+  .link-text {
     font-size: 36px;
   }
 
-  .link::after {
+  .link-text::after {
     height: 2px;
   }
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .link::after {
+  .link-text::after {
     transition: none;
   }
 }

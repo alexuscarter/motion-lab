@@ -1,11 +1,18 @@
 :root {
-  --color-paper: #f4f3ef;
-  --color-surface: #ffffff;
-  --color-stage: #ebe9e3;
-  --color-ink: #0f0f0f;
-  --color-muted: #75746f;
-  --color-line: #e2e0da;
-  --color-accent: #d8ff3e;
+  /* the palette: only these four colors */
+  --color-violet: #190933;
+  --color-cloud: #fdf5ee;
+  --color-lavender: #bbbbff;
+  --color-blush: #f0b4df;
+
+  /* roles: what each color is used for */
+  --color-paper: var(--color-cloud);
+  --color-surface: var(--color-cloud);
+  --color-stage: var(--color-lavender);
+  --color-ink: var(--color-violet);
+  --color-muted: rgb(25 9 51 / 0.7); /* violet at 70% */
+  --color-line: rgb(25 9 51 / 0.14); /* violet at 14% */
+  --color-accent: var(--color-blush);
 
   --font-serif: "Instrument Serif", serif;
   --font-sans: "Geist", sans-serif;
