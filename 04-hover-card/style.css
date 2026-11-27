@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--color-lavender);
+  font-family: var(--font-sans);
+}
+
+main {
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-violet);
+}
+
+/* .card-wrapper {
+  
+} */
+.card {
+  display: block;
+
+  /* overflow: hidden; */
+}
+
+.card-title {
+  font-size: 24px;
+}
+
+.card-year {
+  font-family: var(--font-mono);
+  font-size: 14px;
+}
+
+.cta-button {
+  height: 52px;
+}
+.button-title {
+  font-size: 18px;
+}
+
+.frame {
+  width: 480px;
+  aspect-ratio: 5/6;
+  border-radius: 24px;
+  overflow: hidden;
+  position: relative;
+  max-width: 480px;
+  width: 100%;
+}
+
+.frame-image {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  transform: scale(1);
+  transition: transform var(--duration-slow) var(--ease-out);
+}
+
+.card-text {
+  padding-top: 2rem;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.cta-button {
+  padding: 1rem 2rem;
+  display: flex;
+  gap: 1rem;
+  border-radius: var(--radius-pill);
+  background-color: var(--color-blush);
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  z-index: 3;
+  transform: translateY(150%);
+  transition: transform var(--duration-slow) var(--ease-out);
+}
+
+.card:is(:hover, :focus-visible) .frame-image {
+  transform: scale(1.08);
+}
+
+.card:is(:hover, :focus-visible) .cta-button {
+  transform: translateY(0%);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cta-button,
+  .frame-image {
+    transition: none;
+  }
+}
