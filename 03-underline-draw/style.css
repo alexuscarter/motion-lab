@@ -36,9 +36,14 @@ body {
   color: inherit;
 }
 
-.link-text:hover::after {
+.link-text:is(:hover, :focus-visible)::after {
   transform: scaleX(1);
   transform-origin: left;
+}
+
+.link-text:focus-visible {
+  outline: 2px solid var(--color-ink);
+  outline-offset: 3px;
 }
 
 @media (max-width: 600px) {
