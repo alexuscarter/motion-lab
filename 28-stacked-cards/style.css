@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--color-cloud);
+}
+
+.cards {
+  position: relative;
+  width: 672px;
+  height: 1214px;
+  /* --dy: 32px;
+  --dx: -24px; */
+}
+
+.card {
+  width: 360px;
+  height: 300px;
+  border-radius: 16px;
+  padding: 16px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: calc(100 - var(--i));
+  border: 1px solid var(--color-ink);
+  /* transform: translate(calc(var(--i) * var(--dx)), calc(var(--i) * var(--dy))); */
+  /* transition: transform var(--duration-slow) var(--ease-inout);
+  transition-delay: calc(var(--i) * 40ms); */
+}
+
+.label {
+  display: flex;
+  justify-content: space-between;
+}
+
+.label p {
+  font-size: 12px;
+  font-family: var(--font-mono);
+  text-transform: uppercase;
+}
+.is-blush {
+  background-color: var(--color-blush);
+  color: var(--color-ink);
+}
+
+.is-cloud {
+  background-color: var(--color-cloud);
+  color: var(--color-ink);
+}
+
+.is-lavender {
+  background-color: var(--color-lavender);
+  color: var(--color-ink);
+}
+
+.is-violet {
+  background-color: var(--color-violet);
+  color: var(--color-cloud);
+}
+
+/* .is-cascade {
+  --dy: 32px;
+  --dx: -24px;
+}
+.is-row {
+  --dx: -28px;
+  --dy: 0px;
+}
+.is-stairs {
+  --dx: -16px;
+  --dy: -44px;
+} */
