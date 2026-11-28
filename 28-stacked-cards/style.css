@@ -10,10 +10,6 @@ body {
 
 .cards {
   position: relative;
-  width: 672px;
-  height: 1214px;
-  /* --dy: 32px;
-  --dx: -24px; */
 }
 
 .card {

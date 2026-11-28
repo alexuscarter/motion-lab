@@ -50,20 +50,23 @@ cards.innerHTML = colors
 
 const cardEls = document.querySelectorAll(".card");
 
+// puts every card's center on its position (half the card: 360 / 2, 300 / 2)
+const drawCards = () => {
+  cardEls.forEach((card, index) => {
+    card.style.transform = `translate(${positions[index].x - 180}px, ${positions[index].y - 150}px)`;
+  });
+};
+
 const tick = () => {
   positions[0].x += (mouseX - positions[0].x) * 0.25;
   positions[0].y += (mouseY - positions[0].y) * 0.25;
-  cardEls[0].style.transform = `translate(${positions[0].x - 180}px, ${positions[0].y - 200}px)`;
 
   for (let i = 1; i < positions.length; i++) {
     positions[i].x += (positions[i - 1].x - positions[i].x) * 0.25;
     positions[i].y += (positions[i - 1].y - positions[i].y) * 0.25;
   }
 
-  cardEls.forEach((card, index) => {
-    card.style.transform = `translate(${positions[index].x - 180}px, ${positions[index].y - 200}px)`;
-  });
-
+  drawCards();
   requestAnimationFrame(tick);
 };
 
@@ -74,7 +77,5 @@ if (!prefersReducedMotion) {
     position.x = window.innerWidth / 2 + index * -24;
     position.y = window.innerHeight / 2 + index * 32;
   });
-  drawCards(); // the forEach you moved into its own function
+  drawCards();
 }
-
-requestAnimationFrame(tick);
