@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>05 Accordion</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Geist+Mono:ital,wght@0,100..900;1,100..900&family=Geist:ital,wght@0,100..900;1,100..900&family=Instrument+Serif:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../shared/tokens.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <div class="list">
+        <div class="list-item">
+          <button class="question" aria-expanded="false">
+            What does a project cost?
+            <span class="icon"
+              ><svg
+                width="14"
+                height="14"
+                viewBox="0 0 14 14"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true"
+              >
+                <path
+                  d="M6.80005 0.800049V12.8M0.800049 6.80005H12.8"
+                  stroke-width="1.6"
+                  stroke-linecap="round"
+                  stroke="currentColor"
+                />
+              </svg>
+            </span>
+          </button>
+
+          <div class="answer-wrapper">
+            <div class="answer-inner">
+              <p class="answer">
+                Most sites land between $8k and $25k. We'll send a fixed quote
+                after a short call, so you know the number before we start.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="list-item">
+          <button class="question" aria-expanded="true">
+            How long does it take?
+            <span class="icon"
+              ><svg
+                width="14"
+                height="14"
+                viewBox="0 0 14 14"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="false"
+              >
+                <path
+                  d="M6.80005 0.800049V12.8M0.800049 6.80005H12.8"
+                  stroke-width="1.6"
+                  stroke-linecap="round"
+                  stroke="currentColor"
+                />
+              </svg>
+            </span>
+          </button>
+
+          <div class="answer-wrapper">
+            <div class="answer-inner">
+              <p class="answer">
+                Usually 6–10 weeks from kickoff to launch, depending on the
+                number of pages and how much motion the site needs.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="list-item">
+          <button class="question" aria-expanded="false">
+            Do you work with startups?
+            <span class="icon"
+              ><svg
+                width="14"
+                height="14"
+                viewBox="0 0 14 14"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true"
+              >
+                <path
+                  d="M6.80005 0.800049V12.8M0.800049 6.80005H12.8"
+                  stroke-width="1.6"
+                  stroke-linecap="round"
+                  stroke="currentColor"
+                />
+              </svg>
+            </span>
+          </button>
+          <div class="answer-wrapper">
+            <div class="answer-inner">
+              <p class="answer">
+                Yes, often. We have a smaller package for early teams that need
+                a sharp launch site now and room to grow later.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
